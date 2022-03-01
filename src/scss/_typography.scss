@@ -1,0 +1,20 @@
+
+
+:root {
+    font-size:$font-size;
+    font-family: $font-family !important;
+    font-weight: $font-regular; 
+    line-height: 1.6rem !important;
+}
+body{
+    font-size:$font-size!important;
+    font-weight: $font-regular !important;
+    letter-spacing: .2px !important;
+    color: $gray-800 !important;
+    font-family: $font-family!important;
+}
+p{ 
+    line-height: 1.6rem !important;
+    font-size: $font-size !important;
+    font-weight: $font-regular !important;
+}

@@ -1,0 +1,363 @@
+.pop-getquote{
+  margin: 6.5rem 4rem; 
+  max-width: 450px;
+  @include media-breakpoint-down(md){
+    margin: 3rem 3rem; 
+  }
+  @include media-breakpoint-down(sm){
+    margin: 2.5rem 1.5rem; 
+  }
+}
+.quote-modal-lg{
+    .modal-content{
+        background-color:var(--bg);
+    }
+}
+.quote{
+    position: relative;
+    .form-group{
+        margin-bottom: 10px;
+        position: relative;
+        z-index: 2;
+        .form-control{
+            border: none;
+            background-color: var(--bg-white);
+            color: var(--text-color) !important;
+            border-radius: 4px;
+            height: 40px;  
+            @include font-size(16px);
+            font-weight: $font-regular;        
+            &.message{
+            height: 80px;
+            }
+            &:active, &:focus{
+                box-shadow: none;
+            }
+            &::-webkit-input-placeholder { /* Edge */
+                color: var(--text-color);
+              }
+              
+              &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                color: var(--text-color);
+              }
+              
+              &::placeholder {
+                color: var(--text-color);
+              }
+        }
+        &.selectinput{
+            height: 40px !important;
+            z-index: 5;
+          .select{
+              border: none !important;
+              height: 40px;
+              .select-styled{
+                background-color: none !important;
+                border: none !important;
+                height: 40px !important;
+                border-radius: 4px !important;
+              }
+          }  
+        }
+        &.message{
+            height: 80px;
+            }
+        
+    }
+    .submit-btn{
+        position: relative;
+        z-index: 2;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        right: -20px;
+        bottom: 1px;
+        width: 100%;
+        height: 85px;
+        background-image: url("../img/texture.png");
+        background-repeat: repeat;
+        max-width: 150px;
+        
+    }
+    &.quote-modal{
+        .form-group{
+            .form-control{
+             border: 1px solid var(--border-dark);   
+            }
+            &.selectinput{            
+            .select{                
+                height: 40px;
+                .select-styled{                
+                  border: 1px solid var(--border-dark)!important;
+                }
+            } 
+            }
+        }
+    }
+}
+.quote-left{
+    background-image: url(../img/blue-abstract.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 280px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    &::before{
+        content: "";
+        background-color: rgba($secondary, .8);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+    .text-quote{
+        color: $white;
+        position: relative;       
+        padding: 2rem;
+        z-index: 2;
+        p{
+            font-size: 14px; 
+            line-height: 19px !important;
+            font-weight: $font-light;    
+            span{
+              width: 30px;
+              height: 30px;   
+              margin: 14px 0;           
+              text-transform: uppercase;
+              font-size: 13px;
+              line-height: 30px;
+              text-align: center;
+              border-radius: 30px;
+              display: block;
+              border: 1px solid rgba($white, .8);
+              opacity: .8;
+
+            }
+        }
+        .btn-callexpert{
+            border: 1px solid rgba($white, .8);
+            border-radius: 25px;
+            color: $white;
+            font-size: 12px;
+            padding: .75rem 1.5rem;
+            i, svg{
+                margin-right: 8px;
+            }
+        }
+        
+    }
+}
+
+ /*---------- SELECT INPUT STYLE */
+ $select-color: rgb(53, 53, 53);
+ $select-background: #ffffff;
+ $select-width: 100%;
+ $select-height: 44px; 
+ .select-hidden {
+    display: none;
+    visibility: hidden;
+    padding-right: 10px;
+  }
+  .select {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;    
+    color: var(--text-color) !important;
+    width: $select-width;
+    height: $select-height;
+    border: 1px solid $gray-300;
+    border-radius: 4px;
+    margin-top:0px;
+    margin-bottom: 0px;
+    line-height: 16px !important;
+    
+  }
+  .select-styled {
+    position: absolute; 
+    top: -1px;
+    right: -1px;
+    bottom: 0;
+    left: -1px;
+    background-color: var(--bg-white) !important;
+    border-radius: $radius;
+    border: 1px solid $white;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    height: $select-height;
+    line-height: 23px;
+    box-sizing: border-box;    
+    transform:  transition(all 0.2s ease-in);
+    &:after {
+      content:"";
+      width: 0;
+      height: 0;
+      border: 7px solid transparent;
+      border-color: var(--text-color) transparent transparent transparent;
+      position: absolute;
+      top: 16px;
+      right: 10px;
+      
+    }
+    &:hover {
+      background-color: var(--bg-white);
+      border-radius: 4px;
+      border: 1px solid $gray-300 !important;
+      box-sizing: border-box;               
+    
+    }
+    &:active, &.active {
+      background-color: var(--bg-white);
+      border-radius: 4px 4px 0 0;
+      border: 1px solid $gray-300 !important;
+      border-bottom: none !important;
+      &:after {
+        top: 9px;
+        border-color: transparent transparent var(--text-color) transparent;
+      }
+    } 
+   
+  }
+  
+  .select_popup {
+    .select-hidden {
+        display: none;
+        visibility: hidden;
+        padding-right: 10px;
+      }
+    .select-styled{
+    background-color: $white ;
+    border: 1px solid #aaaaaa !important;
+
+    &:hover {
+        background-color: var(--bg-white) !important ;        
+        border: 1px solid  #aaaaaa !important;                 
+        
+        }
+        }      
+        
+
+        
+
+    }
+
+
+  .select-options {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    right: -1px;
+    left: -1px;
+    z-index: 999;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: var(--bg-white);
+    border-radius: 0px 0px 4px 4px;
+    border: 1px solid var(--border-dark)!important;
+    border-top: none !important;   
+    li {
+      margin: 0;
+      padding: 12px 0;
+      text-indent: 15px;
+      border-top: 1px solid var(--border-dark);
+     transform:  transition(all 0.15s ease-in);
+      &:hover {
+        color: var(--text-color);
+        background: var(--border-dark);
+      }
+      &[rel="hide"] {
+        display: none;
+      }
+    }
+  }
+
+ *:focus {
+    outline: none;
+}
+
+
+
+// SUCCESS MESSAGE
+$success__primary: #0063FF;
+$success__secondary: rgb(228, 241, 248);
+
+.success-message {
+    text-align: center;   
+    max-width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 111;
+}
+
+.success-message__icon {
+    max-width: 75px;
+}
+
+.success-message__title {
+    color: $white;
+    @include font-size(30px);
+    transform: translateY(25px);
+    opacity: 0;
+    transition: all 200ms ease;
+    
+    .active & {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.success-message__content {
+    color: $white;
+    transform: translateY(25px);
+    opacity: 0;
+    transition: all 200ms ease;
+    transition-delay: 50ms;
+    min-width: 420px;
+    @include font-size(16px);
+
+    p{
+        line-height: 1.4rem !important;
+        margin-bottom: 20px;
+    }
+    
+    a{
+        color: $white;
+        @include font-size(18px);
+        line-height: 20px;
+    }
+    .active & {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    @media screen and (max-width:568px){
+        min-width: 300px;   
+    }
+}
+
+.icon-checkmark {
+    circle {
+        fill: $success__primary;
+        transform-origin: 50% 50%;
+        transform: scale(0);
+        transition: transform 200ms cubic-bezier(.22, .96, .38, .98);
+    }
+    path {
+        transition: stroke-dashoffset 350ms ease;
+        transition-delay: 100ms;
+    }
+    
+    .active & {
+        circle {
+            transform: scale(1);
+        }
+    }
+}

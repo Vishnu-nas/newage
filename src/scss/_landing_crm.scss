@@ -1,0 +1,508 @@
+.font-md{
+    @include font-size(20px);
+    color: var(--text-color);
+    @include media-breakpoint-down(sm){
+        @include font-size(16px);
+   
+    }
+}
+.schedule_form{
+    background-color: var(--bg-white);
+    max-width: 640px;
+    margin: 0 auto;
+    .form-control{
+        height: 50px;
+        background-color: var(--bg-gray-light);
+        border: none;
+    }
+}
+.contact-sec{
+    background: $accent-dr;
+    background-color: var(--bg-accent);
+    @include media-breakpoint-down(sm){
+        text-align: center;
+    }
+   .subscription-text{
+    max-width: 600px;
+        @include font-size(36px);
+        @include media-breakpoint-down(sm){
+            @include font-size(22px);
+       
+        }
+    }
+    h1{
+        @include font-size(50px);
+        @include media-breakpoint-down(sm){
+            @include font-size(30px);
+        } 
+    }
+    .text-small{
+        @include font-size(26px);
+        line-height: 28px;
+        @include media-breakpoint-down(sm){
+            @include font-size(16px);
+            line-height: 22px;
+        }
+    }
+}
+.banner-form{
+    max-width: 640px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    position: relative;
+    z-index: 11;
+}
+.smb-wards{
+    
+    @include media-breakpoint-down(sm){
+        max-width: 100%;
+      }
+
+    img{
+        position: absolute;
+        background-color: var(--bg-gray-light);
+
+        max-width: 760px;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        margin-top: -50px;
+        z-index: 1;
+        @include media-breakpoint-down(sm){
+            max-width: 100%;
+          }
+    }
+
+    hr{
+        background: $blue-light;
+        position: relative;
+    }
+}
+.crm_banner{
+    width: 100%;
+    height: 80vh;
+    @include media-breakpoint-down(sm){
+        background-color: var(--secondary);
+        height: auto;
+        padding-bottom: 20px;
+    }
+    video{
+        width: 100%;
+        height: 80vh;
+        object-fit: cover;
+        @include media-breakpoint-down(sm){
+          display: none;
+        }
+    }
+    // position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        background: rgba($secondary, .9);
+        width: 100%;
+        height: 80vh;
+        @include media-breakpoint-down(sm){
+            display: none;
+        }
+    }
+    .inner-text{
+        position: absolute;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        top: 13%;
+        @media screen and (min-width:1366px){
+            top: 26%;
+        }
+        @include media-breakpoint-down(sm){
+            position: inherit;
+            bottom: inherit;
+        }
+        p{
+            font-weight: 100;
+            @include font-size(40px);
+            @include media-breakpoint-down(sm){
+                @include font-size(21px);
+                padding-top:70px;
+            }
+            b{
+                @include font-size(48px);
+                font-weight:bold;
+                @include media-breakpoint-down(sm){
+                    @include font-size(28px);
+                }
+            }
+        }
+    }
+}
+
+.solution-sec{
+    background-color: var(--bg-gray-light);
+  
+    .mt-10{
+        margin-top: 14rem !important;
+        @include media-breakpoint-down(sm){
+            margin-top: 0px !important;
+        }
+    }
+
+        .card{
+            min-height: 395px;
+            border: none !important;
+
+            @include media-breakpoint-down(sm){
+                min-height: inherit;
+            }
+            .card-body{
+                background-color: var(--bg-white);
+
+                
+          
+            h6{
+                color: var(--text-color);
+                @include font-size(24px);
+                font-weight: normal;
+                @include media-breakpoint-down(sm){
+                    @include font-size(18px);
+                }
+            }
+                p{
+                    color: var(--text-color);
+                    height: 70px;
+                    padding-bottom: 20px;
+                    @include font-size(16px);
+                    @include media-breakpoint-down(sm){
+                        @include font-size(14px);
+                    }    
+        }
+    } 
+    }
+    .icon-box{
+        width: 120px;
+        height: 120px;
+        margin: 40px auto;
+        @include media-breakpoint-down(sm){
+            width: 60px;
+            height: 60px;
+            margin: 10px auto;
+        }
+    }
+    .content-p{
+        max-width: 1100px;
+        margin: 0 auto;
+        text-align: center;
+        @include font-size(24px);
+        margin-bottom: 10px;
+        @include media-breakpoint-down(sm){
+            @include font-size(16px);
+            min-height: 190px;
+
+        }
+    }
+    .apps-include{
+        .card{
+            min-height: 280px;
+            border: none !important;
+            @include media-breakpoint-down(sm){
+                min-height: inherit;
+            }
+            .card-body{
+                padding: 20px 35px;
+                &.social{
+                    background-color: #2F95E4;
+                }
+                &.care{
+                    background-color: #01DBBD;
+                }
+                &.location{
+                    background-color: #1D83B1;
+                }
+                &.demand{
+                    background-color: #3F3F53;
+                }
+                &.customized{
+                    background-color: #7575EF;
+                }
+                &.food_delivery{
+                    background-color: #F9CA2F;
+                }
+            }
+            .icon{
+                width: 100px;
+                height: 100px;
+                margin:25px 0px 15px 0px;
+                @include media-breakpoint-down(sm){
+                    width: 70px;
+                    height: 70px;
+                    margin: 10px 0px;
+                }
+            }
+            p{
+                color: $white;
+                @include font-size(28px);
+                @include media-breakpoint-down(sm){
+                    @include font-size(18px);
+                }
+            }
+        }
+        
+    }
+}
+.who-needs{
+    background-color: var(--secondary);
+        .card{
+        border: none;
+
+        .card-body{
+            background-color: var(--bg-white);
+            border-radius: 2px;
+        }
+        .icon-box{
+            width: 80px;
+            height: 80px;
+            margin: 25px auto;
+            text-align: center;
+            @include media-breakpoint-down(sm){
+                width: 60px;
+                height: auto;
+                margin: 10px auto;
+            }
+        }
+        h6{
+            height: 50px;
+            margin-top: 5px;
+            color: var(--text-color);
+    
+            @include media-breakpoint-down(sm){
+                height: auto;
+            }
+        }
+    }
+    
+   
+}
+.features{
+    background-color: var(--bg-gray-light);
+
+    h2{
+        @include font-size(36px);
+        margin-bottom: 24px;
+        font-weight: $font-regular;
+        @include media-breakpoint-down(sm){
+            @include font-size(24px);   
+            margin-bottom: 0px;
+             }
+    }
+    .list-group{
+        li{
+            position: relative;
+            list-style: none;
+            padding-left: 46px;
+            padding-bottom: 1.6rem;
+            color: var(--text-color);
+            @include font-size(24px);
+            @include media-breakpoint-down(sm){
+                @include font-size(18px);
+                padding-bottom: 1rem;
+            }
+            &:before {
+                content: "";
+                position: absolute;
+                background-image: url(../img/tick.png);
+                width: 32px;
+                height: 32px;
+                background-size: 100% 100%;
+                left: 0px;
+            }
+        }
+    }
+    .left-box{
+        background:$blue-light;
+        position: relative;
+        width: 340px;
+        min-height: 640px;
+        @include media-breakpoint-down(sm){
+            min-height: 0;
+        }
+        
+    }
+    .left-image{
+        position: absolute;
+        top: 90px;
+        left: 75px;
+        @include media-breakpoint-down(sm){
+            left: 0px;
+            border: 2px solid $blue-light;
+            position: inherit;
+            top: 20px;
+        }
+    }
+    .right-box{
+        background:$blue-light;
+        position: relative;
+        width: 300px;
+        min-height: 640px;
+        float: right;
+        @include media-breakpoint-down(sm){
+            min-height: 0;
+        }
+    }
+    .right-image{
+        position: absolute;
+        top: 90px;
+        right: 75px;
+        @include media-breakpoint-down(sm){
+            border: 2px solid $blue-light;
+            right: 0px;
+            position: inherit;
+            top: 20px;
+
+        }
+    }
+    img{
+        max-width: 560px;
+        @include media-breakpoint-down(sm){
+            max-width: 300px;
+            margin: 0 auto;
+            display: flex;
+        }
+
+    }
+}
+.title-section{
+    .icon{
+        width: 100px;
+        height: 100px;
+        margin-bottom: 1.5rem;
+        @include media-breakpoint-down(sm){
+            width: 60px;
+            height: 60px;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+        }
+    }
+    p{
+        @include font-size(36px);
+        max-width: 700px;
+        color: $secondary;
+        font-weight: 100;
+        padding-bottom: 1.2rem;
+        color:var(--text-secondary);
+        @include media-breakpoint-down(sm){
+            @include font-size(22px);
+        }
+        span{
+            color: var(--bg-accent);
+        }
+    }
+}
+.list-paragraph{
+    li{
+        position: relative;
+        list-style: none;
+        padding-left: 56px;
+        padding-bottom: 1.6rem;
+        color: $secondary;
+        @include font-size(20px);
+        color: var(--text-color);
+      
+        @include media-breakpoint-down(sm){
+            @include font-size(16px);
+            padding-bottom: 1rem;
+            padding-left: 38px;
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            background-image: url(../img/list_icon.png);
+            width: 27px;
+            height: 31px;
+            background-size: 100% 100%;
+            left: 0px;
+            @include media-breakpoint-down(sm){
+                width: 18px;
+                height: 22px;
+            }
+        }
+    }
+   
+}
+.white-bg{
+background: var( --bg-white);
+}
+
+.quote-common{
+    position: relative;
+  
+    .form-group{
+        margin-bottom: 10px;
+        position: relative;
+        z-index: 2;
+        .form-control{
+            border: none;
+            color: var(--text-color) !important;
+            border-radius: 4px;
+            height: 40px;  
+            @include font-size(16px);
+            font-weight: $font-regular;        
+            &.message{
+            height: 80px;
+            }
+            &:active, &:focus{
+                box-shadow: none;
+            }
+            &::-webkit-input-placeholder { /* Edge */
+                color: var(--text-color);
+              }
+              
+              &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                color: var(--text-color);
+              }
+              
+              &::placeholder {
+                color: var(--text-color);
+              }
+        }
+        &.selectinput{
+            height: 50px !important;
+            z-index: 5;
+          .select{
+              border: none !important;
+              height: 50px;
+              .select-styled{
+                background-color: none !important;
+                border: none !important;
+                height: 50px !important;
+                border-radius: 4px !important;
+              }
+          }  
+        }
+        &.message{
+            height: 80px;
+            }
+        
+    }
+    .submit-btn{
+        position: relative;
+        z-index: 2;
+    }
+
+    &.quote-modal{
+        .form-group{
+           
+            &.selectinput{            
+            .select{                
+                height: 50px;
+                .select-styled{                
+                    background-color: var(--bg-gray-light) !important;
+                }
+            } 
+            }
+        }
+    }
+    .select-styled:after{
+        margin-top: 6px;
+    }
+}

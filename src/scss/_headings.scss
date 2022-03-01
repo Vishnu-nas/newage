@@ -1,0 +1,95 @@
+@mixin title-face {
+    font-family: $font-family;
+    font-weight: $font-extra-bold;
+  }
+  @mixin non-title-face {
+    font-family: $font-family;
+    font-weight: 400;
+  }
+  @mixin heading-link {
+  text-decoration: none;
+  color: $secondary;
+  }
+  
+  @mixin heading {
+    @include title-face;   
+    line-height: 1.2;
+    color: inherit;
+    a {
+      @include heading-link;
+    }
+  }
+  
+  @mixin heading-1 {
+    @include heading;
+    font-size: 3.375em;
+  }
+  
+  @mixin heading-2 {
+    @include heading;
+    font-size: 2.966em;
+  }
+  
+  @mixin heading-3 {
+    @include heading;
+    font-size: 2.35em;
+  }
+  
+  @mixin heading-4 {
+    @include heading;
+    font-size: 1.9em;
+  }
+  
+  @mixin heading-5 {
+    @include heading;
+    font-size: 1.45em;
+  }
+  
+  @mixin heading-6 {
+    @include heading;
+    font-size: 1em;
+  }
+
+h1, h2, h3, h4, h5, h6 {
+  @include title-face;
+}
+
+.index-center-head{
+ h2{
+  @include heading-3;
+ }
+}
+
+.sectional-head{
+    @include font-size(18px);
+    @include non-title-face;
+    color: $gray-600;
+    position: relative;
+    span { 
+        display: block;
+        @include heading-5;       
+        color: $secondary;
+        @include title-face;
+    }
+    &.center-align{
+      text-align: center;
+    }
+    &.blockquote{
+      position: relative;
+      quotes: "\201C""\201D""\2018""\2019";
+      z-index: 3 !important;
+      margin-top: 90px;
+    //  &::after{
+    //   content: open-quote;
+    //   font-size: 8em;
+    //   font-weight: bold;
+    //   position: absolute;
+    //   color: darken($gray-25, 10);
+    //   opacity: .4;
+    //   z-index: -1;
+    //   left:43% ;
+    //   top: -135px;
+
+    //  } 
+    }
+}

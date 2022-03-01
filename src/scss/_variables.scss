@@ -1,0 +1,104 @@
+
+
+
+
+//COLORS
+$primary          :  #3953FF;
+$primary-light    :  #9aa7ff;
+$primary-dark     :  #2c2c4c;
+$secondary        :  #1B1B5D;
+$secondary-dark   :  #141323;
+$secondary-darkest:  #040314;
+$secondary-light  :  #33314E;
+$secondary-medium :  #474769;
+$accent           :  #FF145C;
+$accent-dr        :  #FF145C;
+$illuminate       :  #FF8316;
+$text-color-light :  #232337;
+
+$text-color-dark  :  #fff;
+$gray             :  #E7EBEE;
+$gray-text        :  #767A8A;
+$gray-text-dark   :  #71799A;
+$gray-dark        :  #545454;
+$gray-bg          :  #F9F9FF;
+$input-box        :  #F1F1F9;
+$blue-light       :  #8989F9;
+$gray-light       :  #F8F8F8;
+$gray-light-md    :  #464661;
+
+$bg-light       :  $text-color-dark;
+$bg-dark        :  $text-color-light;
+
+$border-light   : #C7CEE3;
+$border-dark    : #3C3E60; 
+
+$high-light     :  $accent;
+$darkmode       :  #232337;
+$lightmode      :  #232337;
+
+$purple-light   :   #CED8FF;
+$green-light    :   #B8F2E6;
+$sky-blue       :   #D2F6FF;
+$yellow-light   :   #FFF0CC;
+$white          :   #fff;
+
+//FONTS
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,700,900&display=swap');
+$font-family : 'Muli', sans-serif;
+$font-size       :17px;
+$font-light      :300;
+$font-regular    :400;
+$font-bold       :700;
+$font-extra-bold :900;
+
+
+// PAGE PADING
+$page-padding :2.5em;
+$radius       :12px;
+
+$blend-screen  : screen;
+$blend-unset  : unset;
+
+
+
+
+
+html{
+    height: 100%;
+    --bg: #{$bg-light};
+    --nav-bg: #{$white};
+    --bg-white:#{$white};
+    --bg-gray:#{$gray};
+    --bg-gray-light:#{$gray-light};
+    --bg-accent:#{$accent-dr};
+    --secondary: #{$secondary};   
+    --primary: #{$primary};   
+    --text-color:#{$bg-dark};
+    --text-color-gray:#{$gray-text};
+    --text-secondary:#{$secondary};
+    --blend-screen:#{$blend-unset};
+    --border-dark:#{$border-light};
+
+}
+html[data-theme='dark']{
+    height: 100%;
+    --bg: #{$bg-dark};
+    --nav-bg: #{$secondary-darkest};
+    --bg-white:#{$secondary-light};
+    --bg-gray:#{$secondary-medium};
+    --bg-gray-light:#{$gray-light-md};
+    --bg-accent:#{$secondary-dark};
+    --secondary: #{$secondary-dark};  
+    --primary: #{$primary-dark};   
+    --text-color:#{$bg-light};
+    --text-secondary:#{$primary-light};
+    --text-color-gray:#{$gray-text-dark};
+    --blend-screen:#{$blend-screen};
+    --border-dark:#{$border-dark};
+    
+}
+body{
+    background-color: var(--bg) !important;
+    color: var(--text-secondary) !important;
+}

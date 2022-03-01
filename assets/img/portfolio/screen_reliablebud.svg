@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="533" height="860.127" viewBox="0 0 533 860.127">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3e3e3e"/>
+      <stop offset="0.088"/>
+      <stop offset="0.904"/>
+      <stop offset="1" stop-color="#434343"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" x1="1" y1="0.5" x2="0" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#071a37"/>
+      <stop offset="1" stop-color="#276091"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_27" data-name="Group 27" transform="translate(-395 -116)">
+    <path id="Path_159" data-name="Path 159" d="M0,50Z" transform="translate(545 216)" opacity="0.6"/>
+    <rect id="Rectangle_2" data-name="Rectangle 2" width="369.17" height="750.704" rx="50" transform="translate(556.505 225.413)" fill="#373737"/>
+    <rect id="Rectangle_43" data-name="Rectangle 43" width="358.711" height="740.244" rx="46" transform="translate(561.735 230.643)"/>
+    <path id="Subtraction_3" data-name="Subtraction 3" d="M301.185,712H33.469A33.442,33.442,0,0,1,0,678.534V33.469A33.442,33.442,0,0,1,33.469,0H75.333A6.364,6.364,0,0,1,77.4.527a3.334,3.334,0,0,1,2.092,3.16V5.1a20.023,20.023,0,0,0,20,20H231.022a20.023,20.023,0,0,0,20-20V3.56A3.339,3.339,0,0,1,253.114.527,6.3,6.3,0,0,1,255.206,0h45.979a33.442,33.442,0,0,1,33.47,33.469V678.534A33.442,33.442,0,0,1,301.185,712Z" transform="translate(573.24 245.286)" fill="#5e5e5e"/>
+    <rect id="Rectangle_47" data-name="Rectangle 47" width="5" height="7" transform="translate(557 291)"/>
+    <rect id="Rectangle_50" data-name="Rectangle 50" width="5" height="7" transform="translate(557 905)"/>
+    <rect id="Rectangle_48" data-name="Rectangle 48" width="6" height="7" transform="translate(920 291)"/>
+    <rect id="Rectangle_49" data-name="Rectangle 49" width="6" height="7" transform="translate(920 905)"/>
+    <rect id="Rectangle_52" data-name="Rectangle 52" width="5" height="6" transform="translate(856 225)"/>
+    <path id="Path_16" data-name="Path 16" d="M0,.7H5.23V5.981H0Z" transform="translate(622.399 970.146)"/>
+    <rect id="Rectangle_54" data-name="Rectangle 54" width="4" height="29" transform="translate(553 317)" fill="url(#linear-gradient)"/>
+    <rect id="Rectangle_55" data-name="Rectangle 55" width="4" height="49" transform="translate(553 367)" fill="url(#linear-gradient)"/>
+    <rect id="Rectangle_57" data-name="Rectangle 57" width="3" height="80" transform="translate(925 383)" fill="url(#linear-gradient)"/>
+    <rect id="Rectangle_56" data-name="Rectangle 56" width="4" height="50" transform="translate(553 429)" fill="url(#linear-gradient)"/>
+    <g id="Group_16" data-name="Group 16" transform="translate(775.756 244.946)">
+      <path id="Path_8" data-name="Path 8" d="M4.876,0A4.876,4.876,0,1,1,0,4.876,4.876,4.876,0,0,1,4.876,0Z" fill="#0d1323"/>
+      <path id="Path_5" data-name="Path 5" d="M1.663,0c.919,0,.919,3.922,0,3.922A1.831,1.831,0,0,1,0,1.961,1.831,1.831,0,0,1,1.663,0Z" transform="translate(2.251 2.851)" fill="url(#linear-gradient-5)"/>
+      <path id="Path_6" data-name="Path 6" d="M1.663,0c.919,0,.919,3.922,0,3.922A1.831,1.831,0,0,1,0,1.961,1.831,1.831,0,0,1,1.663,0Z" transform="translate(7.454 6.773) rotate(180)" fill="url(#linear-gradient-5)"/>
+    </g>
+    <rect id="Rectangle_58" data-name="Rectangle 58" width="42" height="6" rx="3" transform="translate(720 247)" fill="rgba(255,255,255,0.15)"/>
+  </g>
+</svg>

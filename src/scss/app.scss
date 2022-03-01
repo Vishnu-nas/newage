@@ -1,0 +1,44 @@
+@import "variables";
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1500px
+) !default;
+
+$font-family-sans-serif:      $font-family !important;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:            $font-family-sans-serif !default;
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "./owlcarousel/owl.carousel.scss";
+// style
+// @import "font-face";
+
+@import "headings";
+// @import "typography";
+@import "mixins";
+@import "layouts";
+@import "form-elements";
+@import "web-elements";
+@import "smb-banner";
+@import "smbheader";
+// @import "smbfooter";
+@import "product";
+@import "casestudy";
+@import "portfolio";
+@import "footer";
+@import "quote-form";
+@import "blog";
+@import "contact";
+@import "appointment";
+@import "create-an-app";
+@import "landing_crm";

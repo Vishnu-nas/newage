@@ -1,0 +1,465 @@
+
+.create_app{
+    @media only screen and (min-width: 768px) and (max-width: 1500px){
+      .container-create{
+            width: 86%;
+            margin: 0 auto;
+        }
+      }
+  
+    .banner{
+        background-image: url(../img/create_an_app/banner.jpg);
+        width: 100%;
+        height: 70vh;
+        background-position: center center;
+        @include media-breakpoint-down(md){
+            height: 60vh;
+        }
+        @include media-breakpoint-down(sm){
+            height: 80vh;
+        }
+        @media only screen and (max-width: 414px){
+            height: 60vh;
+        }
+        .inner-box{
+            height: 70vh;
+            @include media-breakpoint-down(md){
+                height: 60vh;
+            }
+            @include media-breakpoint-down(sm){
+                height: 80vh;
+            }
+            @media only screen and (max-width: 414px){
+                height: 60vh;
+            }
+           
+        }
+        h1{
+            line-height: 4.5rem;
+            @include font-size(80px);
+            width: 620px;
+            @media only screen and (max-width: 1500px) {
+                @include font-size(62px);
+                line-height: 3.7rem;
+                width: 480px;
+            }
+            @include media-breakpoint-down(lg){
+                @include font-size(52px);
+                line-height: 3rem;
+                width: 420px;
+              }
+
+            @include media-breakpoint-down(sm){
+                @include font-size(36px);
+                line-height: 2rem;
+                width: 290px;
+            }
+        }
+        p{
+            @include font-size(38px);
+            max-width: 800px;
+            @media only screen and (max-width: 1500px) {
+                @include font-size(32px);
+                max-width: 570px;
+            }
+            @include media-breakpoint-down(lg){
+                @include font-size(28px);
+                max-width: 520px;
+              }
+            @include media-breakpoint-down(sm){
+                @include font-size(22px);
+            }
+        }
+    }
+    .badge-set{
+        background-color: var(--bg-gray-light);
+
+        img{
+            width: 160px;
+            margin: 0 auto;
+            @media only screen and (max-width: 1500px) {
+                width: 150px;
+            }
+            @include media-breakpoint-down(lg){
+                width: 120px;
+            }
+            @include media-breakpoint-down(sm){
+                width: 70px;
+            }
+        }
+    }
+    .why_choose{
+        h1{
+            @include font-size(60px);
+            @media only screen and (max-width: 1500px) {
+                @include font-size(52px);
+            }
+            @include media-breakpoint-down(lg){
+                @include font-size(40px);
+              }
+            @include media-breakpoint-down(sm){
+                @include font-size(26px);
+              }
+        }
+        p{
+            @include font-size(32px);
+            color: var(--text-color);
+            @include media-breakpoint-down(lg){
+                @include font-size(26px);
+              }
+            @include media-breakpoint-down(sm){
+                @include font-size(24px);
+              }
+              
+        }
+        .list-group{
+            li{
+                position: relative;
+                list-style: none;
+                padding-left: 60px;
+                padding-bottom: 2.2rem;
+                color: var(--text-color);
+                font-weight: $font-extra-bold;
+                @include font-size(30px);
+
+                @media only screen and (max-width: 1500px) {
+                    padding-left: 50px;
+                    padding-bottom: 2rem;
+                    font-size: 27px;
+                }
+                @include media-breakpoint-down(lg){
+                    padding-left: 42px;
+                    padding-bottom: 1.2rem;
+                    @include font-size(19px);
+                }
+
+                @include media-breakpoint-down(sm){
+                    @include font-size(16px);
+                    padding-left: 34px;
+                    padding-bottom: .5rem;
+                  }
+                &:before {
+                    font-family: Font Awesome\ 5 Free;
+                    font-weight: $font-regular;
+                    content: "\f058";
+                    color: var(--text-secondary);
+                    position: absolute;
+                    left: 0px;
+                    top: 0;
+                }
+            }
+        }
+        .img-box{
+            overflow: hidden;
+            position: relative;
+            img{
+               width: 100%;
+            }
+        }
+        .top-box{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        
+            h1{
+                @include font-size(130px);
+                font-weight: $font-bold ;
+                @include media-breakpoint-down(lg){
+                    @include font-size(100px);
+                  }
+
+                @include media-breakpoint-down(sm){
+                    @include font-size(70px);
+                  }
+            }
+            p{
+                @include font-size(30px);
+                @include media-breakpoint-down(lg){
+                    @include font-size(24px);
+                  }
+                @include media-breakpoint-down(sm){
+                    @include font-size(24px);
+                  }
+            }
+        }
+        .img-box-right{
+            overflow: hidden;
+            position: relative;
+            img{
+               width: 100%;
+            }
+        
+        }
+        .pattern-dots-right{
+            content: "";
+            padding: 7%;
+            &:before {
+                content: "";
+                background-image: url(../img/create_an_app/circle-dots.png);
+                width: 180px;
+                height: 170px;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            &:after {
+                content: "";
+                background-image: url(../img/create_an_app/circle-dots.png);
+                width: 180px;
+                height: 170px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                z-index: -1;
+            }
+        }
+        .pattern-dots{
+            content: "";
+            padding: 7%;
+        
+            &:before {
+                content: "";
+                background-image: url(../img/create_an_app/circle-dots.png);
+                width: 180px;
+                height: 170px;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            &:after {
+                content: "";
+                background-image: url(../img/create_an_app/circle-dots.png);
+                width: 180px;
+                height: 170px;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                z-index: -1;
+            }
+        }
+    }
+    .quote-sec{
+        background: rgba($black, .8);
+    .left-box{
+        h2{
+            @include font-size(50px);
+            @media only screen and (max-width: 1500px) {
+                @include font-size(46px);
+            }
+            @include media-breakpoint-down(lg){
+                @include font-size(40px);
+              }
+            @include media-breakpoint-down(sm){
+                @include font-size(34px);
+              }
+        }
+        p{
+            @include font-size(36px);
+            @media only screen and (max-width: 1500px) {
+                @include font-size(28px);
+            }
+            @include media-breakpoint-down(lg){
+                @include font-size(24px);
+              }
+            @include media-breakpoint-down(sm){
+                @include font-size(16px);
+              }
+        }
+        button{
+            @include font-size(26px);
+            @include media-breakpoint-down(lg){
+                @include font-size(16px);
+              }
+        }
+    }
+    .grecaptcha-badge{
+        position: inherit !important;
+    }
+    .form-box{
+        
+        background-color: var(--bg-white);
+        border-radius: 8px;
+        border-bottom: 5px solid $primary;
+
+        p{
+            color: var(--text-color);
+            @include font-size(26px);
+            font-weight: $font-extra-bold;
+            @include media-breakpoint-down(lg){
+                @include font-size(20px);
+              }
+            @include media-breakpoint-down(sm){
+                @include font-size(18px);
+              }
+        }
+        .form-control, .select-styled{
+            background: var(--bg-gray-light);
+            border: none !important;
+            height: 50px;
+            border-radius: 6px;
+
+            @include media-breakpoint-down(sm){
+                height: inherit;
+              }
+        }
+        .message{
+            height: 100px;
+        }
+        .select-styled::after {
+            content: "";
+            margin-top: 6px;
+            @include media-breakpoint-down(sm){
+                margin-top: inherit;
+              }
+        }
+        button{
+            height: 50px;
+            @include media-breakpoint-down(sm){
+                height: inherit;
+              }
+        }
+        .select-styled{
+            background: var(--bg-gray-light) !important;
+        }
+        .select{
+            border: none !important; 
+            background-color: inherit !important; 
+        }
+    }
+}
+
+.key-vertical{
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 160px;
+        background-image: url("../img/create_an_app/key_vertical_banner.png");
+        background-repeat: no-repeat ;
+        height: -webkit-fill-available;
+        width: -webkit-fill-available;
+        background-size: 40%;
+      }
+    h1{
+        @include font-size(54px);
+        
+        @include media-breakpoint-down(lg){
+            @include font-size(40px);
+          }
+        @include media-breakpoint-down(sm){
+            @include font-size(30px);
+          }
+    }
+    .card{
+        border: none;
+        max-width: 380px;
+        min-height: 380px;
+        @media only screen and (max-width: 1500px) {
+            min-height: 330px;
+        }
+        @include media-breakpoint-down(lg){
+            min-height: 250px;
+          }
+        @include media-breakpoint-down(sm){
+            min-height: 200px;
+          }
+
+        background: $black;
+        &::before{
+            content: "";
+            position: absolute;
+            left:30px;
+            top: 15%;
+            height: 150px;
+            width: 184px;
+            background-image: url("../img/create_an_app/square-dots.png");
+            background-repeat: no-repeat ;
+            @include media-breakpoint-down(sm){
+                display: none;
+              }
+    
+          }
+        
+        .card-body{
+            display: flex;
+            align-items: center;
+        &.location{
+            background: #fc3861;
+        }
+        &.social{
+            background: #a041fb;
+        }
+        &.healthcare{
+            background: #375dfb;
+        }
+        &.apps{
+            background: #26aabf;
+        }
+        &.food{
+            background: #bb841e;
+        }
+
+        
+        
+        }
+        h3{
+            position: relative;
+            z-index: 1;
+            color: $white;
+            @include font-size(36px);
+            padding-left: 30px;
+            @media only screen and (max-width: 1500px) {
+                @include font-size(30px);
+            }
+            @include media-breakpoint-down(lg){
+                @include font-size(28px);
+            }
+            @include media-breakpoint-down(sm){
+                @include font-size(26px);
+            }
+        }
+    }
+}
+
+.title-img{
+    width: 30px;
+    margin-right: 15px;
+    display: inline-block;
+    vertical-align: text-top;
+    img{
+        width: 100%;
+    }
+}
+.how-much{
+    background-color: var(--bg-gray-light);
+    
+    h1{
+        @include font-size(50px);
+        @include media-breakpoint-down(lg){
+            @include font-size(40px);
+          }
+        @include media-breakpoint-down(sm){
+            @include font-size(21px);
+          }
+    }
+    p{
+        @include font-size(28px);
+        color: var(--text-color);
+        @media only screen and (max-width: 1500px) {
+            @include font-size(24px);
+        }
+        @include media-breakpoint-down(lg){
+            @include font-size(22px);
+          }
+        @include media-breakpoint-down(sm){
+            @include font-size(16px);
+          }
+    }
+    h3{
+       color: var(--text-color);
+       opacity: .8;
+    }
+}
+}

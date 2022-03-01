@@ -1,0 +1,322 @@
+//colors
+$product_gray: #505561;
+$product_black: rgba(0, 0, 0, 0.7);
+$product_white: #fff;
+$product_golden: #a5a5a7;
+$product_blue_medium: #25a3db;
+$product_rose: #ff3e83;
+$product_green: #50b54d;
+$product_orange: #e16b26;
+$product_blue_light: #00c6db;
+$product_blue_dark: #1851dc;
+
+//urls
+.main_container {
+	font-size: 1rem !important;
+	color: var(--text-color);
+}
+
+.parallax-product{
+	position: relative;
+	&::after{
+		content: '';
+		position: absolute;
+		top: 0; right: 0; bottom: 0; left: 0;
+		background-color: rgba($gray-800, 0.4);
+		height: 100%;
+		width: 100%;
+		z-index: 0;
+	}
+	.container{
+		position: relative;
+		z-index: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+
+		.product-banner{
+			color: $gray-300;
+			text-align: center;
+			max-width: 800px;
+			h1{
+				@include font-size(40px);
+				span{
+					font-weight: 100;
+					@include font-size(30px);
+				}
+			}			
+		}
+		.logo_size{
+			height: 100px;
+			width: 100px;
+			img{
+				width: 100%;
+			}
+		}
+		@include screen (custom, max, 767){
+
+			.product-banner{				
+				h1{
+					@include font-size(24px);
+				}			
+			}
+			.logo_size{
+				height: 90px;
+				width: 90px;
+				img{
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+.rowgap {
+	margin: 100px 0;
+}
+.logo_size_service {
+	width: 35px;
+	color: $product_white;
+}
+.logo_size_service_small {
+	width: 45px;
+	color: $product_white;
+}
+.logo_size_footer {
+	width: 180px;
+}
+.banner_head {
+	font-size: 2.3rem;
+	margin: 120px 0;
+	span {
+		font-size: 1.2rem;
+	}
+}
+.footerttle {
+	font-size: 2.3rem;
+	margin: 40px 0;
+	line-height: 1.5rem;
+	span {
+		font-size: 1.2rem;
+		color: $product_golden;
+		font-weight: normal;
+	}
+}
+.pagetitle {
+	background-color: $product_blue_medium;
+	text-align: center;
+	padding: 15px 0;
+}
+.pagetitle_remobi {
+	background-color: $product_rose;
+	text-align: center;
+	padding: 15px 0;
+}
+.pagetitle_gowash {
+	background-color: $product_green;
+	text-align: center;
+	padding: 15px 0;
+}
+.subhead {
+	@include font-size(35px);
+	color: $product_white;
+	font-weight: bold;
+	@include screen(custom, max, 767){
+		@include font-size(20px);
+	}
+}
+
+.submainhead {
+	text-transform: uppercase;
+	font-size: 1.3rem;
+	font-weight: bold;
+	margin: 65px 0 0;
+}
+.statsblok {
+	margin-bottom: 40px;
+	margin-top: 50px;
+	h5 {
+		color: $product_blue_medium;
+	}
+}
+.statsblok_remobi {
+	margin-bottom: 40px;
+	margin-top: 50px;
+	h5 {
+		color: $product_rose;
+	}
+}
+.statsblok_gowash {
+	margin-bottom: 40px;
+	margin-top: 50px;
+	h5 {
+		color: $product_green;
+	}
+}
+.bigtext {
+	@include font-size(60px);
+	font-weight: bold;
+	opacity: 0.4;
+	margin: 65px 0;
+	@include screen (custom, max,767){
+		@include font-size(30px);	
+	}
+}
+.servicestab {
+	padding: 65px 0;
+	background-color: $product_orange;
+	color: $product_white;
+}
+.servicestab_remobi {
+	padding: 65px 0;
+	background-color: $product_blue_light;
+	color: $product_white;
+}
+.servicestab_gowash {
+	padding: 65px 0;
+	background-color: $product_blue_dark;
+	color: $product_white;
+}
+.icnblk {
+	display: flex;
+	align-items: center;
+}
+.numeric {
+	font-size: 2rem;
+	text-align: center;
+}
+.footer {
+	background-color: $product_gray;
+	padding: 50px 0;
+	color: $product_white;
+}
+.cntact_out {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.cntact {
+	text-align: left;
+	border-left: 1px solid $product_golden;
+	margin-left: 20px;
+	padding-left: 20px;
+	font-size: 1.2rem;
+	line-height: 1.4rem;
+}
+.cntact_link {
+	font-size: 1rem;
+	color: $product_white;
+}
+@media(min-width: 320px) and(max-width: 660px) {	
+	.banner_head {
+		font-size: 2.3rem;
+		margin: 47px 0;
+	}
+
+	.statsblok {
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+	.rowgap {
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+	.icnblk {
+		margin: 28px 0;
+	}
+}
+
+
+
+/*------------- PROCUT LISTING --------------*/
+$car-wash  : rgb(29, 79, 179);
+$laundry   : rgb(27, 158, 219);
+$na-remobi : rgb(204, 60, 139);
+$cab-app   : rgb(255, 201, 1); 
+$fd-app    : rgb(244, 67, 54);
+
+.product-card{
+	border: 1px solid var(--border-dark);
+	border-radius: $radius;
+	background-color: var(--bg-white);
+	overflow:hidden;
+	.card-image{
+	 height: 180px;	
+	 background-image: url('../img/large-wave.svg');
+	 background-repeat: no-repeat;
+	 background-position: right bottom;
+	 background-color: $gray-800;	
+	 position: relative;
+	 overflow: hidden;
+	 .product-logo{
+		 width: 100px;
+		 height:100px; 
+		 position: absolute;
+		 left: 34px;
+		 top: 34px;
+		 img{
+			 width: 100%;
+		 }
+
+	 }
+	}
+	.card-content{
+	 h6, h5{ padding: 0; margin: 0;}
+	 h6{ margin-bottom: 6px;}	 
+	}
+	.card-action{
+		a{
+		 color: $red !important;	
+		 font-weight: bold;
+		}
+	}
+
+
+// GOWASH
+&.car-wash{
+	.card-image{
+	background-color: $car-wash;	 
+	}
+	.card-content {
+		h6{ color: $car-wash; }
+	}	
+ }
+ //LAUNDRY APP
+ &.laundry{
+	.card-image{
+	background-color: $laundry;	 
+	}
+	.card-content {
+		h6{ color: $laundry; }
+	}	
+ }
+ // NA-REMOBI
+ &.na-remobi{
+	.card-image{
+	background-color: $na-remobi;	 
+	}
+	.card-content {
+		h6{ color: $na-remobi; }
+	}	
+ }
+
+ &.cab-app{
+	.card-image{
+	background-color: $cab-app;	 
+	}
+	.card-content {
+		h6{ color: $cab-app; }
+	}	
+ }
+
+ &.fd-app{
+	.card-image{
+	background-color: $fd-app;	 
+	}
+	.card-content {
+		h6{ color: $fd-app; }
+	}	
+ }
+
+}

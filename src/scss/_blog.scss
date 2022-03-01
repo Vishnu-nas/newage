@@ -1,0 +1,47 @@
+
+.blogsmb .item .card, .blog-listing.card{
+    border-radius: $radius; 
+    border: 1px solid var(--border-dark);
+    background-color: var(--bg-white);
+    @include font-size(16px);    
+    overflow: hidden;
+    height: 300px;
+    a{
+        color: var(--text-color);        
+        .card-img-top{
+            min-height: 150px;
+            height: 150px;
+            object-fit: cover;
+            object-position: center;           
+        }
+        .card-body{
+            padding: 1.5rem;
+            .blog-date{
+                font-style: italic !important;
+                color: var(--text-color-gray) !important;
+                @include font-size(12px);
+                padding: 0;
+                margin: 0;
+            }
+            p{ margin: 0; padding: 0;}
+            .blog-title{
+                line-height: 26px!important;
+                @include font-size(18px)
+            }
+            a.btn-outline{
+               border: 1px solid $high-light;
+               color: $high-light; 
+            }
+        }
+        &:hover, &:focus, &:active{
+           text-decoration: none;
+           outline: none;
+        }
+    }
+}
+
+
+
+
+
+

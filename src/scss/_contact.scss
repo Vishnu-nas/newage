@@ -1,0 +1,54 @@
+.contact-form{
+    background: $secondary;
+    .form-group{
+        margin-bottom: .70rem;
+        .form-control{
+            border: none;
+            color: #7B7B7B;
+            height: 46px;
+            &.textarea{
+                height: 100px;     
+                resize: none;
+              }
+        }
+    }
+    
+  }
+
+
+  .contact-wrapper{
+    border: none;
+    border-radius: $radius;
+    background-color: var(--secondary);
+    color: $white;
+    .company-address{
+      ul{
+        margin: 0;
+        padding: 0;
+        li{
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          font-weight: $font-light;
+          a{
+            color: $purple-light;
+            &:hover{
+              cursor: pointer;
+              color: lighten($purple-light, 20);
+              transition: all 2s ease-in;
+            }
+            
+          }
+        }
+      }
+    }
+  }
+  .map-wrapper{
+    min-height: 400px;
+    display: flex;
+    margin-top: 50px;
+    border-top: 1px solid var(--border-dark);
+    iframe{
+      height: 500px;
+    }
+  }
