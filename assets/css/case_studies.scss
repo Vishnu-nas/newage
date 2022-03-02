@@ -116,10 +116,13 @@ p{
 }
 .bannerCs{
     height: 500px;
-    background-color: #13348d;
+    background: url(../../images/casestudies/trans-pattern.png) no-repeat 0 -50px, transparent linear-gradient(137deg, #1B1B5D 0%, #1B1B5D 100%) 0% 0% no-repeat padding-box;
     @include responsive(tab-port){
         height: auto !important;
     }
+}
+.clientOverview{
+    background: #EDEEF6 0% 0% no-repeat padding-box;
 }
 .h100{
     height: 100%;
@@ -321,6 +324,29 @@ p{
         opacity: 1;
         @include responsive(tab-port){
             font-size: 30px;
+        }
+    }
+}
+.rltLeft{
+    position: relative;
+    span.absImg{
+        img{
+            position: absolute;
+            z-index: 0;
+            height: auto !important;
+            width: 80% !important;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            @include responsive(phone){
+                width: 100% !important;
+            }
+        }
+    }
+    img{
+        &.rltImg{
+            position: relative;
+            z-index: 1;
         }
     }
 }

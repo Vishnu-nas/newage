@@ -134,13 +134,17 @@ span, p, h2 {
 
 .bannerCs {
   height: 500px;
-  background-color: #13348d;
+  background: url(../../images/casestudies/trans-pattern.png) no-repeat 0 -50px, transparent linear-gradient(137deg, #1B1B5D 0%, #1B1B5D 100%) 0% 0% no-repeat padding-box;
 }
 
 @media only screen and (max-width: 992px) {
   .bannerCs {
     height: auto !important;
   }
+}
+
+.clientOverview {
+  background: #EDEEF6 0% 0% no-repeat padding-box;
 }
 
 .h100 {
@@ -429,5 +433,31 @@ span, p, h2 {
   .projHd h2 {
     font-size: 30px;
   }
+}
+
+.rltLeft {
+  position: relative;
+}
+
+.rltLeft span.absImg img {
+  position: absolute;
+  z-index: 0;
+  height: auto !important;
+  width: 80% !important;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 768px) {
+  .rltLeft span.absImg img {
+    width: 100% !important;
+  }
+}
+
+.rltLeft img.rltImg {
+  position: relative;
+  z-index: 1;
 }
 /*# sourceMappingURL=case_studies.css.map */
